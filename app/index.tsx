@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, TextInput } from "react-native";
 
 export default function Index() {
-  const [text, onChangeText] = useState("Digite sua senha:");
-  //const [number, onChangeNumber] = useState("");
+  const [text, onChangeText] = useState("");
+  const [number, onChangeNumber] = useState("");
 
   return (
     <View>
@@ -11,9 +11,18 @@ export default function Index() {
 
       <TextInput
           style={styles.input}
-          placeholder= "teste"
+          placeholder= "Digite sua matrícula:"
           value={text}
           onChangeText={onChangeText}
+        />
+
+        <Text style={styles.baseText}>Senha</Text>
+
+        <TextInput
+          style={styles.input}
+          placeholder= "Digite sua senha:"
+          value={number}
+          onChangeNumber={onChangeNumber}
         />
     </View>
   );
