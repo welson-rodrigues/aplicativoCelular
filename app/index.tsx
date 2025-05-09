@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, TextInput } from "react-native";
+import { StyleSheet, Text, View, TextInput, Button } from "react-native";
 
 export default function Index() {
   const [text, onChangeText] = useState("");
@@ -23,6 +23,10 @@ export default function Index() {
           placeholder= "Digite sua senha:"
           value={number}
           onChangeNumber={onChangeNumber}
+        />
+        <Button
+          title="ENTRAR"
+          //disabled
         />
     </View>
   );
